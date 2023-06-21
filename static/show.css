@@ -1,0 +1,51 @@
+body {
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+
+}
+
+
+.details {
+    flex: 1;
+}
+
+.detail-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.detail-table td,
+.detail-table th {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.detail-table th {
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.cover-image {
+    width: auto;
+    max-height: 100%;
+    object-fit: contain;
+    margin-right: 20px;
+    position: relative;
+    top: -53px;  
+    
+}
+
+.detail-row {
+    flex: 1 0 300px;
+    margin-top: 0;
+}
+
+
+
+h1 {
+    text-align: center;
+}
+

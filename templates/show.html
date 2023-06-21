@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel = "stylesheet" href="static/show.css">
+</head>
+<body>
+    <div class="container">
+        <img class="cover-image" src="{{ cover_image }}" alt="Image" />
+        <div class="details">
+            <h1>{{ title }}</h1>
+            <table class="detail-table">
+                <tr>
+                    <th>Genres</th>
+                    <td>{{ ', '.join(genres) }}</td>
+                </tr>
+                <tr>
+                    <th>Status</th>
+                    <td>{{ status }}</td>
+                </tr>
+                <tr>
+                    <th>Sypnosis</th>
+                    <td>{{ description|safe }}</td>
+                </tr>
+            </table>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ video_id }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+        </table>
+    <div>
+   
+</body>
+</html>

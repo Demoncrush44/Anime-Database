@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Anime Shows</title>
+</head>
+<body>
+    <h1>My Anime Shows</h1>
+    <ul>
+        {% for show in shows %}
+        <li>{{ show }}</li>
+        {% endfor %}
+    </ul>
+
+    <div>
+        {% if page_number > 1 %}
+            <a href="{{ url_for('shows', page_number=page_number-1) }}">Previous</a>
+        {% endif %}
+        {% if page_number < total_pages %}
+            <a href="{{ url_for('shows', page_number=page_number+1) }}">Next</a>
+        {% endif %}
+    </div>
+</body>
+</html>

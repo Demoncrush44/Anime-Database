@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anime database</title>
+        <link rel = "stylesheet" href="static/styles.css">
+    </head>
+    <body>
+        <div class="grid">
+            {% for show in shows %}
+                <a href="{{ url_for('show_details', title=show.title) }}">
+                    <img src="{{ show.cover_image }}" alt="{{ show.title }}"/>
+                </a>
+                {%endfor%}
+            </figure>
+        </div>
+    </body>
+</html>
